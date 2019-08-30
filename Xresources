@@ -4,69 +4,42 @@ URxvt.cursorUnderline:	true
 URxvt.pointerBlank:	true
 URxvt.visualBell:	true
 URxvt.fading: 		40
-URxvt.font:		xft:DejaVu Sans Mono-14, xft:IPAGothic
+URxvt.font:		xft:DejaVu Sans Mono-10, xft:IPAGothic
 !!URxvt.ximFont:		xft:IPAGothic-14
 
-URxvt.depth:       32
 ! special
-URxvt.foreground:   [100]#c5c8c6
-URxvt.background:   [70]#1d1f21
-URxvt.cursorColor:  [100]#c5c8c6
+*.foreground:   #f5e3c6
+*.background:   #514e49
+*.cursorColor:  #f5e3c6
 
 ! black
-URxvt.color0:       [100]#282a2e
-URxvt.color8:       [100]#373b41
+*.color0:       #34373d
+*.color8:       #373b41
 
 ! red
-URxvt.color1:       [100]#a54242
-URxvt.color9:       [100]#cc6666
+*.color1:       #a54242
+*.color9:       #cc6666
 
 ! green
-URxvt.color2:       [100]#8c9440
-URxvt.color10:      [100]#b5bd68
+*.color2:       #8c9440
+*.color10:      #b5bd68
 
 ! yellow
-URxvt.color3:       [100]#de935f
-URxvt.color11:      [100]#f0c674
+*.color3:       #de935f
+*.color11:      #f0c674
 
 ! blue
-URxvt.color4:       [100]#5f819d
-URxvt.color12:      [100]#81a2be
+*.color4:       #5f819d
+*.color12:      #81a2be
 
 ! magenta
-URxvt.color5:       [100]#85678f
-URxvt.color13:      [100]#b294bb
+*.color5:       #85678f
+*.color13:      #b294bb
 
 ! cyan
-URxvt.color6:       [100]#5e8d87
-URxvt.color14:      [100]#8abeb7
+*.color6:       #5e8d87
+*.color14:      #8abeb7
 
 ! white
-URxvt.color7:       [100]#707880
-URxvt.color15:      [100]#c5c8c6
-
-
-
-!!URxvt.color0:      [100]#1a435b
-!!URxvt.color1:      [100]#9f0000
-!!URxvt.color2:      [100]#71d492
-!!URxvt.color3:      [100]#959358
-!!URxvt.color4:      [100]#46777e
-!!URxvt.color5:      [100]#a247ac
-!!URxvt.color6:      [100]#556596
-!!URxvt.color7:      [100]#ba7f50
-!!URxvt.color8:      [100]#0c4a6f
-!!URxvt.color9:     [100]#ff0000
-!!URxvt.color10:     [100]#78e07f
-!!URxvt.color11:     [100]#c6c35f
-!!URxvt.color12:      [100]#33b8cb
-!!URxvt.color13:     [100]#ad42d0
-!!URxvt.color14:     [100]#2d58da
-!!URxvt.color15:     [100]#cb7e41
-!!URxvt.foreground:  [100]#0082fd
-!!URxvt.background:  [90]#1b2b35
-!!URxvt.colorIT:     [100]#8ec07c
-!!URxvt.colorBD:     [100]#fe8019
-!!URxvt.colorUL:     [100]#83a598
-!!URxvt.scrollColor: [100]#504945
-!!URxvt.troughColor: [90]#3C3836
+*.color7:       #a49586
+*.color15:      #dac7b4
