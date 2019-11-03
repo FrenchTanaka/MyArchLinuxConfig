@@ -8,13 +8,13 @@ URxvt.font:		xft:DejaVu Sans Mono-10, xft:IPAGothic
 !!URxvt.ximFont:		xft:IPAGothic-14
 
 ! special
-*.foreground:   #f5e3c6
-*.background:   #514e49
+*.foreground:   #ffffff
+*.background:   #000000
 *.cursorColor:  #f5e3c6
 
 ! black
-*.color0:       #34373d
-*.color8:       #373b41
+*.color0:       #000000
+*.color8:       #333333
 
 ! red
 *.color1:       #a54242
@@ -41,5 +41,5 @@ URxvt.font:		xft:DejaVu Sans Mono-10, xft:IPAGothic
 *.color14:      #8abeb7
 
 ! white
-*.color7:       #a49586
-*.color15:      #dac7b4
+*.color7:       #dddddd
+*.color15:      #ffffff

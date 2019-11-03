@@ -1,42 +1,50 @@
-[perMem]
-label=MEM
-command=cat /proc/meminfo |egrep -e "MemTotal:|Active:" |awk '{if(NR%10){ORS=" "}else{ORS="\n"};print;}' |awk '{printf "%.f%", 100*($5/1024/1024)/($2/1024/1024)}'
-color=#8fa1b3
-interval=1
 
-[perGPU]
-label=GPU
-command=nvidia-smi -q --display=UTILIZATION |grep "Gpu" |awk '{print $3 "%"}'
-color=#8fa1b3
-interval=1
-
-[perCPU]
+[CPU]
 label=CPU
-command=top n 1 b |grep Cpu |awk '{printf "%.f%", $2}'; cat /proc/cpuinfo |grep MHz |awk '{a+=$4/12} END{printf " %.f MHz", a}'; sensors |grep Core |grep 10: |awk '{print $3}'
-color=#8fa1b3
+command=top n 1 b |grep Cpu |awk '{print $2"%"}'
+color=#ffffff
+interval=1
+
+[MEM]
+label=MEM
+command=top n 1 b |grep Mem |grep buff/cache |awk '{print ($8/$4)*100"%"}'
+color=#ffffff
 interval=1
 
 [TASK]
 label=TASK
 command=top n 1 b |grep Tasks |awk '{print $2}'
-color=#8fa1b3
+color=#ffffff
 interval=1
 
-[SSD1]
-label=/
-command=df |grep /dev/nvme0n1p2 |awk '{print $5}'
-color=#8fa1b3
+[SSD]
+label=SSD
+command=df |grep /dev/sdb2 |awk '{print $5}'
+color=#ffffff
 interval=1
+
+[BAT]
+label=BAT
+command=cat /sys/class/power_supply/BAT0/capacity
+color=#ffffff
+interval=1
+
 
 [LAN]
 label=LAN
-command=ip -4 address |grep "eno1:" -A 1 |grep "inet" |awk '{print $2}'
-color=#8fa1b3
+command=ip -4 address |grep "enp0s25:" -A 1 |grep "inet" |awk '{print $2}'
+color=#ffffff
+interval=1
+
+[WAN]
+label=WAN
+command=ip -4 address |grep "wlp3s0:" -A 1 |grep "inet" |awk '{print $2}'
+color=#ffffff
 interval=1
 
 [DATE]
 label=DATE
 command=date +'%y/%m/%d %H:%M:%S'
-color=#8fa1b3
+color=#ffffff
 interval=1
 
